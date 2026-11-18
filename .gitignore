@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+frontend/dist/
+*.log
+
+# Env & editors
+.env
+.env.local
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

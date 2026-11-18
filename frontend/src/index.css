@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { @apply bg-canvas text-slate-800 dark:bg-navy-900 dark:text-slate-100; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-primary { @apply btn bg-gradient-to-r from-brand-600 to-accent-600 text-white shadow-sm hover:from-brand-700 hover:to-accent-600; }
+  .btn-soft { @apply btn bg-brand-50 text-brand-600 hover:bg-brand-100 dark:bg-brand-500/10 dark:text-brand-300 dark:hover:bg-brand-500/20; }
+  .btn-ghost { @apply btn text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-white/5; }
+  .btn-dark { @apply btn bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900; }
+  .input { @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100 dark:border-white/10 dark:bg-navy-800 dark:text-slate-100 dark:focus:ring-brand-500/20; }
+  .card { @apply rounded-2xl border border-slate-200/80 bg-white shadow-card dark:border-white/10 dark:bg-navy-800; }
+  .icon-btn { @apply grid h-10 w-10 place-items-center rounded-xl border border-slate-200 text-slate-500 transition hover:bg-slate-50 hover:text-slate-700 dark:border-white/10 dark:text-slate-400 dark:hover:bg-white/5; }
+}
+
+.prose-chat p { margin: 0.4rem 0; }
+.prose-chat pre { @apply my-2 overflow-x-auto rounded-lg bg-navy-900 p-3 text-xs text-slate-100; }
+.prose-chat code { @apply rounded bg-slate-100 px-1 py-0.5 text-[0.85em] dark:bg-white/10; }
+.prose-chat pre code { @apply bg-transparent p-0; }
+.prose-chat ul { @apply my-2 list-disc pl-5; }
+.prose-chat ol { @apply my-2 list-decimal pl-5; }
+.prose-chat h1, .prose-chat h2, .prose-chat h3 { @apply mb-1 mt-3 font-semibold; }

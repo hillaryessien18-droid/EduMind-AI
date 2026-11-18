@@ -1,0 +1,21 @@
+{
+  "title": "Python Programming: Beginner to Confident",
+  "description": "Variables, control flow, functions and files through small projects.",
+  "level": "beginner",
+  "modules": [
+    {
+      "title": "Getting started",
+      "lessons": [
+        { "title": "Installing Python on Windows", "content": "# Installing Python\n\nDownload Python from python.org and tick **Add to PATH**.", "estimated_minutes": 10 },
+        { "title": "Your first program", "content": "```python\nprint(\"Hello, EduMind!\")\n```", "estimated_minutes": 10 }
+      ]
+    },
+    {
+      "title": "Control flow",
+      "lessons": [
+        { "title": "If statements", "content": "Use `if`, `elif` and `else` to make decisions.", "estimated_minutes": 15 },
+        { "title": "Loops", "content": "`for` loops iterate over sequences; `while` loops repeat until a condition is false.", "estimated_minutes": 15 }
+      ]
+    }
+  ]
+}
